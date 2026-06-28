@@ -1,0 +1,569 @@
+/* ==============================
+   Google Font
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==============================
+   Root Variables
+================================= */
+
+:root{
+    --primary:#00d4ff;
+    --secondary:#008cff;
+    --dark:#0f172a;
+    --dark2:#1e293b;
+    --light:#ffffff;
+    --gray:#cbd5e1;
+    --card:rgba(255,255,255,.05);
+}
+
+/* ==============================
+   Global
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#020617,#0f172a,#111827);
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+/* ==============================
+Navbar
+================================= */
+
+.navbar{
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+}
+
+.navbar-brand{
+
+    font-size:1.6rem;
+
+    color:var(--primary)!important;
+
+    letter-spacing:1px;
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:20px;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.nav-link:hover{
+
+    color:var(--primary)!important;
+}
+
+/* ==============================
+Hero
+================================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:100px;
+}
+
+.hero h4{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.hero h3{
+
+    color:var(--gray);
+
+    min-height:60px;
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+    max-width:600px;
+}
+
+.profile-img{
+
+    width:360px;
+
+    border-radius:50%;
+
+    border:5px solid var(--primary);
+
+    box-shadow:0 0 50px rgba(0,212,255,.35);
+
+    transition:.4s;
+}
+
+.profile-img:hover{
+
+    transform:scale(1.05);
+}
+
+/* ==============================
+Buttons
+================================= */
+
+.btn{
+
+    border-radius:40px;
+
+    padding:12px 28px;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+    color:#000;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    background:white;
+}
+
+.btn-outline-light:hover{
+
+    color:black;
+}
+
+/* ==============================
+Social
+================================= */
+
+.social-icons{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.social-icons a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.35s;
+}
+
+.social-icons a:hover{
+
+    background:var(--primary);
+
+    color:black;
+
+    transform:translateY(-8px);
+}
+
+/* ==============================
+Sections
+================================= */
+
+section{
+
+    padding:100px 0;
+}
+
+.section-title{
+
+    font-size:2.7rem;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    font-weight:700;
+
+    position:relative;
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--primary);
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:-12px;
+
+    border-radius:20px;
+}
+
+/* ==============================
+Glass Cards
+================================= */
+
+.glass-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.4s;
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,212,255,.15);
+}
+
+/* ==============================
+About Preview
+================================= */
+
+.about-preview{
+
+    background:#0b1120;
+
+    text-align:center;
+}
+
+.about-preview p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#d1d5db;
+
+    margin-bottom:35px;
+}
+
+/* ==============================
+Skills
+================================= */
+
+.skill-card{
+
+    background:var(--card);
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.skill-card i{
+
+    color:var(--primary);
+
+    font-size:45px;
+
+    margin-bottom:20px;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(0,212,255,.18);
+}
+
+/* ==============================
+Timeline
+================================= */
+
+.timeline{
+
+    position:relative;
+
+    padding-left:40px;
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    width:3px;
+
+    height:100%;
+
+    background:var(--primary);
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:45px;
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-37px;
+
+    top:5px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+}
+
+/* ==============================
+Project Card
+================================= */
+
+.project-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.project-card img{
+
+    width:100%;
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 40px rgba(0,212,255,.2);
+}
+
+.project-content{
+
+    padding:25px;
+}
+
+/* ==============================
+Certificate Cards
+================================= */
+
+.cert-card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+}
+
+.cert-card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid var(--primary);
+}
+
+/* ==============================
+Footer
+================================= */
+
+footer{
+
+    padding:40px 0;
+
+    background:#020617;
+
+    text-align:center;
+
+    color:#94a3b8;
+}
+
+/* ==============================
+Animations
+================================= */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.profile-img{
+
+    animation:float 5s ease-in-out infinite;
+}
+
+/* ==============================
+Responsive
+================================= */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+}
+
+.hero h1{
+
+font-size:3rem;
+}
+
+.profile-img{
+
+margin-top:50px;
+
+width:280px;
+}
+
+.social-icons{
+
+justify-content:center;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:2.4rem;
+}
+
+.section-title{
+
+font-size:2rem;
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:15px;
+}
+
+}
