@@ -567,3 +567,98 @@ margin-bottom:15px;
 }
 
 }
+/* Active Navbar */
+
+.nav-link.active{
+
+    color:#00d4ff!important;
+
+    font-weight:600;
+
+}
+
+/* Scroll Button */
+
+.scrollTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#00d4ff;
+
+    color:black;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.scrollTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.scrollTop:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Ripple Effect */
+
+.btn{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    background:rgba(255,255,255,.5);
+
+    animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
